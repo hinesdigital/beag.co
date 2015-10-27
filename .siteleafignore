@@ -1,0 +1,11 @@
+.DS_Store
+.sass-cache
+.git
+bower_components/*
+scripts/coffee/*.*
+styles/sass/*.*
+config/*.*
+Gemfile
+Guardfile
+Gemfile.lock
+scss/*

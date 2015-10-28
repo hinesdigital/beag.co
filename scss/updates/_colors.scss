@@ -2,11 +2,13 @@
 @import "flat-ui-colors";
 
 // bill-bryant-for-washington
-$black: #212124;
-$dark-blue: #1F212C;
-$light-gray: #E8E8E8;
-$white: #F5F5F5;
-$yellow: #ECB700;
+$black: #353535;
+$gray: #8B8B8B;
+$light-gray: #C5C5C5;
+$clouds: #E9E9E9;
+$white: #fff;
+$bright-white: $white;
+$red: #D8262C;
 
 // Social Media
 
@@ -18,4 +20,4 @@ $googleplus: $bc-google-plus;
 $youtube: $bc-youtube;
 $pinterest: $bc-pinterest;
 $github: $bc-github;
-$email: $yellow;
+$email: $red;

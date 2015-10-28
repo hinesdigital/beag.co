@@ -1,0 +1,49 @@
+::selection {
+  background: $light-gray; /* WebKit/Blink Browsers */
+  color: $body-font-color;
+}
+::-moz-selection {
+  background: $light-gray; /* Gecko Browsers */
+  color: $body-font-color;
+}
+
+#intro {
+  @extend .medium-text-center;
+
+  padding: 6rem 0;
+  @media #{$medium-up} {
+    padding: 10rem 0;
+  }
+
+  h1 {
+    font-weight: bold;
+
+    span.underlined {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-size: 1.5em;
+    color: $gray;
+  }
+}
+
+.featured-quote {
+  padding: 4rem 0;
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 0;
+
+    p {
+      color: $body-font-color;
+      font-size: 2em;
+      @extend .medium-text-center;
+    }
+    cite {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+}

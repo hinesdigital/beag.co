@@ -12,7 +12,6 @@ main {
   overflow-y: auto;
 
   -webkit-overflow-scrolling: touch;
-  padding: 6rem 0;
   background-color: $white;
 
   /* Force Hardware Acceleration in WebKit */
@@ -25,10 +24,6 @@ main {
 
   .navigation-is-open & {
     @include transform(translateX(100%));
-  }
-
-  @include MQ(M) {
-    padding: 10rem 0;
   }
 }
 

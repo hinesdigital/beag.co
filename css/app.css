@@ -6024,4 +6024,9 @@ main {
     -o-transform: translateX(0);
     transform: translateX(0); }
 
+main footer {
+  background-color: #212124;
+  color: #F5F5F5;
+  padding: 4rem 0; }
+
 /*# sourceMappingURL=app.css.map */

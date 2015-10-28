@@ -2,6 +2,8 @@
 
 @import "updates/colors";
 
+// Foundation Styles
+
 @import "settings";
 // @import "foundation";
 
@@ -42,3 +44,7 @@
   "foundation/components/type",
   "foundation/components/offcanvas",
   "foundation/components/visibility";
+
+// Navigation Styles
+
+@import "updates/nav-styles";

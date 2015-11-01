@@ -1,0 +1,42 @@
+<style>
+  {% assign header-background-rgb = current.meta.header-background-rgb | fallback: '#fff' %}
+  {% assign header-image-url = current.meta.header-image-url | fallback: '' %}
+  {% assign primary-color = current.meta.primary-color | fallback: '#2e2a2a' %}
+  {% assign secondary-color = current.meta.secondary-color | fallback: '#2e2a2a' %}
+  {% assign knockout-color = current.meta.secondary-color | fallback: '#D8262C' %}
+
+  ::selection {
+    background: {{ secondary-color }}; /* WebKit/Blink Browsers */
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: {{ secondary-color }}; /* Gecko Browsers */
+    color: $white;
+  }
+
+  {% unless page.is_homepage? %}
+  #intro {
+    background-image: url("{{ header-image-url }}");
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  {% endunless %}
+
+  {% if header-background-rgb != "#fff" %}
+  #intro .intro--overlay {
+    background-color: rgba({{ header-background-rgb }}, 0.8);
+  }
+
+  #intro h1, #intro p {
+    color: #fff;
+  }
+  {% endif %}
+
+  .cd-nav-trigger, .cd-nav {
+    background-color: {{ secondary-color }};
+  }
+</style>

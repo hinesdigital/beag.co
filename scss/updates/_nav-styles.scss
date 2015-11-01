@@ -3,6 +3,26 @@
 @import 'nav-mixins'; // custom mixins
 @import 'nav-layout'; // responsive grid and media queries
 
+header {
+  h1#logo {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    @media #{$medium-up} {
+      top: 32px;
+      right: 3.4%;
+    }
+    z-index: 3;
+
+    width: 150px;
+    height: 65px;
+    background: url("http://via.ianhin.es/1bWpD+");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+}
+
 main {
   position: relative;
   z-index: 2;

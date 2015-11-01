@@ -9,10 +9,13 @@
 
 #intro {
   @extend .medium-text-center;
+  padding: 0;
 
-  padding: 6rem 0;
-  @media #{$medium-up} {
-    padding: 10rem 0;
+  .intro--overlay {
+    padding: 6rem 0;
+    @media #{$medium-up} {
+      padding: 10rem 0;
+    }
   }
 
   h1 {

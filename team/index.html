@@ -1,0 +1,11 @@
+{% capture content %}
+<section class="row">
+  <div class="medium-8 small-centered columns">
+    {% for subpage in pages %}
+      {% include "includes/team-bio" %}
+    {% endfor %}
+  </div>
+</section>
+{% endcapture %}
+
+{% include "layouts/default" %}

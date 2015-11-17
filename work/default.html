@@ -1,0 +1,22 @@
+{% capture content %}
+<section class="content-body" id="body">
+  <div class="row">
+    <div class="medium-8 small-centered columns">
+      {{ body }}
+    </div>
+  </div>
+</section>
+{% if current.next %}
+  {% assign subpage = current.next %}
+  {% assign next_case_study = true %}
+  {% include "includes/case-study-slide" %}
+{% else %}
+  {% for page in parent.pages limit:1 %}
+    {% assign subpage = page %}
+    {% assign next_case_study = true %}
+    {% include "includes/case-study-slide" %}
+  {% endfor %}
+{% endif %}
+{% endcapture %}
+
+{% include "layouts/default" %}

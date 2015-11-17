@@ -2,7 +2,7 @@
 
   <a href="/">
     <h1 id="logo">
-      The Beag Co.
+      BEAG
     </h1>
   </a>
 
@@ -24,26 +24,31 @@
 
       <nav>
         <ul class="cd-primary-nav">
+          {% for page in site.pages %}
+
           <li>
-            <a href="#0" class="selected">The team</a>
+            <a href="{{ page.url }}" class="selected">{{ page.title }}</a>
           </li>
+
+          {% endfor %}
           <!-- list items here --> </ul>
       </nav>
     </div>
     <!-- .cd-half-block -->
 
     <div class="cd-half-block">
-      <a href="/" id="logo">
-        <img src="http://beag.nationbuilder.com/themes/65/54ef3b4201925b55ec000001/0/attachments/14249646151445955321/default/logo.png">
-      </a>
 
-      <address>
-        <ul class="cd-contact-info">
-          <li>
-            <a href="mailto:info@myemail.co">info@myemail.co</a>
-          </li>
-          <!-- other contact info here --> </ul>
-      </address>
+      <ul class="cd-contact-info">
+        <li>
+          {{ site.meta.description }}
+        </li>
+        <li>
+          <h3>Contact us</h3>
+          <span><a href="mailto:{{ site.meta.email }}">{{ site.meta.email }}</a></span>
+          <span><a href="tel:{{ site.meta.phone }}">{{ site.meta.phone }}</a></span>
+          <span><a href="http://twitter.com/{{ site.meta.twitter_username }}">@{{ site.meta.twitter_username }}</a></span>
+        </li>
+      </ul>
     </div>
     <!-- .cd-half-block --> </div>
   <!-- .cd-navigation-wrapper -->

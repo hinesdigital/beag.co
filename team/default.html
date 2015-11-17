@@ -3,6 +3,8 @@
   <div class="row">
     <div class="medium-8 small-centered columns">
       {{ body }}
+      {% assign subpage = current %}
+      {% include "includes/team-bio--social" %}
     </div>
   </div>
 </section>

@@ -1,0 +1,7 @@
+{% capture content %}
+  {% for subpage in pages %}
+    {% include "includes/case-study-slide" %}
+  {% endfor %}
+{% endcapture %}
+
+{% include "layouts/default" %}

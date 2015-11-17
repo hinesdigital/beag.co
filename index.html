@@ -1,169 +1,101 @@
+{% assign work_page = site.pages['work'] %}
+
 {% capture content %}
-<div id="index">
-  <section id="intro">
+<section class="hero-image">
+  <div class="hero-image--overlay">
     <div class="row">
-      <div class="medium-10 large-8 small-centered columns">
+      <div class="medium-10 large-9 small-centered columns">
         <h1>
-          Winning campaigns invest early in digital &amp; field.
+          Winning campaigns invest in digital &amp; field.
           <span class="underlined">Organizing works.</span>
         </h1>
         <p class="lead">
-          We combine cutting edge digital strategy, data-driven field tactics, and effective online fundraising to help your campaign or organization generate real results.
+          We’re dedicated to helping conservative campaigns &amp; causes build, engage, and activate grassroots communities.
         </p>
       </div>
     </div>
-  </section>
-
-  <section id="case-study-1" class="case-study case-study__bill-bryant-for-governor">
-    <div class="row">
-      <div class="medium-8 columns">
-        <div class="image case-study-image">
-          <div class="browser--top">
-            <div class="button-icons">
-              <span class="red mac-button"></span>
-              <span class="yellow mac-button"></span>
-              <span class="green mac-button"></span>
-            </div>
-          </div>
-          <img src="http://via.ianhin.es/15nDh+">
-          <div class="browser--bottom"></div>
-        </div>
-      </div>
-      <div class="medium-4 columns">
-        <div class="case-study__info">
-          <h3>Case Study</h3>
-          <h2>Bill Bryant for Governor</h2>
-          <p>
-            We were brought in to lead digital strategy for Seattle Port Commissioner Bill Bryant’s campaign for Governor of Washington State, including the design & development of a new, NationBuilder-powered website.
-          </p>
-          <p>
-            <a href="#" class="primary button">View Case Study</a>
-          </p>
-        </div>
-      </div>
+  </div>
+</section>
+{% for subpage in work_page.pages limit:1 %}
+  {% include "includes/case-study-slide" %}
+{% endfor %}
+<aside id="philosophy" class="featured-quote">
+  <div class="row">
+    <div class="medium-10 small-centered columns">
+      <blockquote>
+        <p>
+          “Field organizing is old-school and digital fundraising is new-school, but what both have in common is a philosophical commitment to building a campaign one voter and one donor at a time.”
+        </p>
+        <footer>
+          <cite>
+            <a href="http://www.politico.com/magazine/story/2015/10/gop-tv-ads-ground-game-213225#ixzz3ptrJOowi" target="_blank">Patrick Ruffini, Echelon Insights</a>
+          </cite>
+        </footer>
+      </blockquote>
     </div>
-  </section>
-
-  <aside id="philosophy" class="featured-quote">
-    <div class="row">
-      <div class="medium-10 small-centered columns">
-        <blockquote>
-          <p>
-            “Field organizing is old-school and digital fundraising is new-school, but what both have in common is a philosophical commitment to building a campaign one voter and one donor at a time.”
-          </p>
-          <footer>
-            <cite>
-              <a href="http://www.politico.com/magazine/story/2015/10/gop-tv-ads-ground-game-213225#ixzz3ptrJOowi" target="_blank">Patrick Ruffini, Echelon Insights</a>
-            </cite>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-  </aside>
-
-  <section id="case-study-1" class="case-study case-study__florida-gop">
-    <div class="row">
-      <div class="medium-4 columns">
-        <div class="case-study__info">
-          <h3>Case Study</h3>
-          <h2>Republican Party of Florida</h2>
-          <p>
-            We were brought in to lead digital strategy for Seattle Port Commissioner Bill Bryant’s campaign for Governor of Washington State, including the design & development of a new, NationBuilder-powered website.
-          </p>
-          <p>
-            <a href="#" class="primary button">View Case Study</a>
-          </p>
+  </div>
+</aside>
+{% for subpage in work_page.pages limit:1 offset:1 %}
+  {% include "includes/case-study-slide" %}
+{% endfor %}
+<aside class="featured-quote">
+  <div class="row">
+    <div class="medium-10 small-centered columns">
+      <h1>Want to raise money &amp; find volunteers? Start organizing.</h1>
+      <div class="two-columns">
+        <p>
+          For nearly a decade, conservative campaigns & causes have been trying to figure out the “secret” to the left’s success. How do they raise so much money online? Why are their supporters so “fired up?” And—most imporantly—what do we need to do to harness this power?
+        </p>
+        <p>
+          Do they have some killer app that we don’t have? Or maybe an expert analytics team? Is it big data? Millennials? Snapchat?
+        </p>
+        <p>
+          No. The answer is shockingly simple: they build, engage, and activate grassroots communities.
+        </p>
+        <p>
+          The left is able to consistently raise big money through small donations and turn out voters to the polls because they build their campaigns around engaging voters person-by-person. They build real, meaningful relationships with their campaign’s supporters.
+        </p>
+        <p>
+          This isn’t a tech problem: it’s a strategic opportunity. Early investments in digital &amp; field yield game-changing returns over the course of a campaign.
+        </p>
+        <p>
+          Interested in harnessing this power for your campaign or cause?
+          <a href="/services">We can help.</a>
         </div>
-      </div>
-      <div class="medium-8 columns">
-        <div class="image case-study-image">
-          <div class="browser--top">
-            <div class="button-icons">
-              <span class="red mac-button"></span>
-              <span class="yellow mac-button"></span>
-              <span class="green mac-button"></span>
-            </div>
-          </div>
-          <img src="http://via.ianhin.es/vqUa+">
-          <div class="browser--bottom"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <aside class="featured-quote">
-    <div class="row">
-      <div class="medium-10 small-centered columns">
-        <blockquote>
-          <p>
-            “Field organizing is old-school and digital fundraising is new-school, but what both have in common is a philosophical commitment to building a campaign one voter and one donor at a time.”
-          </p>
-          <footer>
-            <cite>
-              <a href="http://www.politico.com/magazine/story/2015/10/gop-tv-ads-ground-game-213225#ixzz3ptrJOowi" target="_blank">Patrick Ruffini, Echelon Insights</a>
-            </cite>
-          </footer>
-        </blockquote>
       </div>
     </div>
   </aside>
-
-  <section id="case-study-1" class="case-study case-study__florida-gop">
-    <div class="row">
-      <div class="medium-4 columns">
-        <div class="case-study__info">
-          <h3>Case Study</h3>
-          <h2>Republican Party of Florida</h2>
-          <p>
-            We were brought in to lead digital strategy for Seattle Port Commissioner Bill Bryant’s campaign for Governor of Washington State, including the design & development of a new, NationBuilder-powered website.
-          </p>
-          <p>
-            <a href="#" class="primary button">View Case Study</a>
-          </p>
-        </div>
-      </div>
-      <div class="medium-8 columns">
-        <div class="image case-study-image">
-          <div class="browser--top">
-            <div class="button-icons">
-              <span class="red mac-button"></span>
-              <span class="yellow mac-button"></span>
-              <span class="green mac-button"></span>
-            </div>
-          </div>
-          <img src="http://via.ianhin.es/vqUa+">
-          <div class="browser--bottom"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about-us" class="case-study">
+  {% for subpage in work_page.pages limit:1 offset:2 %}
+  {% include "includes/case-study-slide" %}
+{% endfor %}
+  <section class="content-body">
     <div class="row">
       <div class="medium-10 small-centered columns medium-text-center">
-        <img src="http://via.ianhin.es/1bWpD+" style="max-width: 200px;padding-bottom:1rem;">
-        <h2>We’re a little agency with a big impact.</h2>
+        <h2>We’re The BEAG Co. We’re organizers.</h2>
         <p class="lead">
-          By building and leveraging state-of-the-art digital+field campaign infrastructure, we help our clients realize genuine growth in their email, volunteer, and fundraising numbers in a reliable, lasting way.
+          We help campaigns &amp; causes build, engage, and activate grassroots communities.
         </p>
+      </div>
+      <div class="medium-8 small-centered columns">
+        <div class="two-columns">
+          <p> <b>Digital &amp; field organizing wins. Period.</b>
+            And we’re experts in leveraging cutting-edge tools and tactics to help you organize your supporters at scale.
+          </p>
+          <p>
+            By organizing at the grassroots level—both online and offline—you’ll create real, sustainable momentum and a sense of personal investment from supporters. And unlike the “support” that flows from media coverage or direct mail, these supporters will stick with you through the highs and lows of the campaign&mdash;volunteering, contributing, and spreading the word to their friends &amp; neighbors.
+          </p>
+          <p>
+            We’re dedicated to helping conservative campaigns &amp; causes build, engage, and activate their own grassroots bases of support. We’ll build our your digital &amp; field infrastructure, recruit and train activists to become skilled organizers, develop the skills of your mid- and senior-level staff, and even help lead your digital &amp; field campaign on a daily basis.
+          </p>
+          <p>
+            If you want to do more than run a campaign—if you’re looking to grow the conservative movement in your community—then lets talk.
+          </p>
+          <p> <strong>If we work together, there’s no limit to what we can achieve. <a href="mailto:hello@beag.co">Get in touch.</a></strong>
+          </p>
+        </div>
       </div>
     </div>
   </section>
-
-  {% comment %}<section id="nationbuilder" class="case-study">
-    <div class="row">
-      <div class="medium-5 columns text-center show-for-medium-up">
-        <img src="http://via.ianhin.es/YN8s+" style="max-height: 300px;">
-      </div>
-      <div class="medium-7 columns">
-        <h2>We are the world’s foremost NationBuilder Experts &amp; Architects.</h2>
-        <p class="lead">
-          Since 2013, we have designed and developed custom NationBuilder websites for more than 70 different clients, including some of the biggest names in conservative politics — both in the United States and abroad.
-        </p>
-      </div>
-    </div>
-  </section>{% endcomment %}
-</div>
-{% endcapture %}
+  {% endcapture %}
 
 {% include "layouts/default" %}

@@ -1,0 +1,19 @@
+<aside class="team-bio--social">
+  <ul class="inline-list">
+    {% if subpage.meta.email > 0 %}
+    <li>
+      <a href="mailto:{{ subpage.meta.email }}" target="_blank" class="ss-icon ss-air ss-mail"></a>
+    </li>
+    {% endif %}
+          {% if subpage.meta.facebook_username > 0 %}
+    <li>
+      <a href="http://facebook.com/{{ subpage.meta.facebook_username }}" target="_blank" class="ss-icon ss-social-regular ss-facebook"></a>
+    </li>
+    {% endif %}
+          {% if subpage.meta.twitter_username > 0 %}
+    <li>
+      <a href="http://twitter.com/{{ subpage.meta.twitter_username }}" target="_blank" class="ss-icon ss-social-regular ss-twitter"></a>
+    </li>
+    {% endif %}
+  </ul>
+</aside>

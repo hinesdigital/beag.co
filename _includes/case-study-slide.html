@@ -1,0 +1,18 @@
+<section class="hero-image case-study" id="{{ subpage.slug }}" style="background-image: url({{ subpage.meta.header-image-url | replace:" ","/" }}); background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  <div class="hero-image--overlay" style="background-color: rgba({{ subpage.meta.header-background-rgb }}, 0.8);">
+    <div class="row">
+      <div class="medium-10 large-8 small-centered columns">
+        {% if next_case_study %}
+        <div class="label radius" style="background-color: {{ subpage.meta.primary-color }};">Read more</div>
+        {% else %}
+        <div class="label radius" style="background-color: {{ subpage.meta.primary-color }};">Case Study</div>
+        {% endif %}
+        <h1>{{ subpage.title }}</h1>
+        <p class="lead">{{ subpage.meta.lead }}</p>
+          <a href="{{ subpage.url }}" class="small hollow button">
+            View Case Study
+          </a>
+      </div>
+    </div>
+  </div>
+</section>

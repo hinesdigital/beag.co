@@ -1,0 +1,18 @@
+<section class="hero-image" id="intro">
+  <div class="hero-image--overlay">
+    <div class="row">
+      <div class="medium-10 large-8 small-centered columns">
+        {% if parent %}
+        <a class="label radius" href="{{ parent.url }}">{{ parent.title }}</a>
+        {% endif %}
+        <h1>{{ current.title }}</h1>
+        <p class="lead">{{ current.meta.lead }}</p>
+        {% if current.meta.project-url > 0 %}
+          <a href="{{ current.meta.project-url }}" target="_blank" class="small hollow button">
+            Visit live site
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

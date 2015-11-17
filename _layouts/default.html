@@ -1,24 +1,29 @@
+{% assign section = url | remove_first:'/' | split:'/' | first %}
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ title }} | {{ site.title }}</title>
+  <title>{{ site.title }} | {{ title }}</title>
   <link rel="stylesheet" href="/css/app.css" />
-
+  <link href="//cdn.symbolset.com/c4452b8c456afee826875e3cf5304fd4fc15a17c/symbolset.css" rel="stylesheet">
   {% include "includes/custom-color" %}
 </head>
 <body>
-  <main>
+  <main id="{{ current.slug }}">
+    {% unless current.slug == "home" %}
+      {% include "includes/hero-image" %}
+    {% endunless %}
     {{ content }}
-
     <footer id="site-footer">
       <div class="row">
         <div class="medium-6 columns">
-          Site Logo
+          <a href="/">
+            <h1 id="logo">The Beag Co.</h1>
+          </a>
         </div>
-        <div class="medium-6 columns">
-          Footer links
+        <div class="medium-6 medium-text-right columns">
+          <a href="http://nationbuilder.com/beag" target="_blank">Certified <strong>NationBuilder Experts &amp; Architects</strong> since 2013.</a>
         </div>
       </div>
     </footer>

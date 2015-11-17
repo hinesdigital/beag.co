@@ -1,0 +1,17 @@
+<article class="team-bio">
+  <div class="row">
+    <div class="medium-4 columns">
+      <p><a href="{{ subpage.url }}"><img src="{{ subpage.meta.photo }}" alt="{{ subpage.title }}"></a></p>
+    </div>
+    <div class="medium-8 columns">
+      <h3><a href="{{ subpage.url }}">{{ subpage.title }}</a></h3>
+      <p class="lead">{{ subpage.meta.lead }}</p>
+      {{ subpage.excerpt }}
+      {% include "includes/team-bio--social" %}
+    </div>
+  </div>
+</article>
+
+{% unless forloop.last %}
+<hr>
+{% endunless %}

@@ -13,10 +13,9 @@ header {
       right: 3.4%;
     }
     z-index: 3;
-
+    background-image: url("/assets/logo.png");
     width: 150px;
     height: 65px;
-    background: url("http://via.ianhin.es/1bWpD+");
     background-size: contain;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -198,9 +197,9 @@ main {
   h2 {
     position: relative;
     margin-bottom: 1.7em;
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: darken($color-1, 15%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: $color-3;
     text-transform: uppercase;
 
     &::after {
@@ -216,15 +215,16 @@ main {
   }
 
   .cd-primary-nav {
-    margin-top: 60px;
+    margin: 0;
 
     li {
-      margin: 1.6em 0;
+      list-style: none;
+      margin: 0;
     }
 
     a {
       font-family: $secondary-font;
-      font-size: 2.4rem;
+      font-size: 1.5rem;
       color: rgba($color-3, .3);
       display: inline-block;
 
@@ -239,17 +239,28 @@ main {
   }
 
   .cd-contact-info {
-    margin-top: 80px;
+    font-family: $font-family-serif;
+    font-style: normal;
+    margin-top: 4rem;
+    margin-left: 0;
 
     li {
       font-family: $secondary-font;
       margin-bottom: 1.5em;
       line-height: 1.2;
-      color: rgba($color-3, .3);
+      list-style: none;
+      color: rgba($color-3, 1);
     }
 
     a {
       color: $color-3;
+    }
+
+    h3 {
+      color: $color-3;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
     span {
@@ -257,7 +268,7 @@ main {
     }
 
     li, a, span {
-      font-size: 1.6rem;
+      font-size: 1rem;
     }
 
   }
@@ -265,7 +276,7 @@ main {
   @include MQ(L) {
 
     .cd-navigation-wrapper {
-      padding: 62px 20%;
+      padding: 150px 20%;
       @include clearfix;
     }
 
@@ -278,18 +289,17 @@ main {
     }
 
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 5.6em;
+      font-size: 1rem;
     }
 
     .cd-primary-nav {
 
       li {
-        margin: 2em 0;
+        margin: 0;
       }
 
       a {
-        font-size: 4.4rem;
+        font-size: 2.5rem;
       }
 
     }
@@ -303,7 +313,7 @@ main {
       }
 
       li, a, span {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
   }

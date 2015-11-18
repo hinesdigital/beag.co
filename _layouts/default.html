@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ site.title }} | {{ title }}</title>
+  <title>{% if current.slug == "home" %}BEAG - Helping conservative campaigns & causes build, engage, and activate grassroots communities.{% else %}{{ site.title }} | {{ title }}{% endif %}</title>
   <link rel="stylesheet" href="/css/app.css" />
   <link href="//cdn.symbolset.com/c4452b8c456afee826875e3cf5304fd4fc15a17c/symbolset.css" rel="stylesheet">
+
+  {% include "includes/favicons" %}
+
   {% include "includes/custom-color" %}
 </head>
 <body>

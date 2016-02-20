@@ -25,10 +25,11 @@
       <nav>
         <ul class="cd-primary-nav">
           {% for page in site.pages %}
-
+          {% unless page.slug == "jobs" %}
           <li>
             <a href="{{ page.url }}" class="selected">{{ page.title }}</a>
           </li>
+          {% endunless %}
 
           {% endfor %}
           <!-- list items here --> </ul>
@@ -47,6 +48,9 @@
           <span><a href="mailto:{{ site.meta.email }}">{{ site.meta.email }}</a></span>
           <span><a href="tel:{{ site.meta.phone }}">{{ site.meta.phone }}</a></span>
           <span><a href="http://twitter.com/{{ site.meta.twitter_username }}">@{{ site.meta.twitter_username }}</a></span>
+        </li>
+        <li>
+          <a href="/jobs">Job Opportunities</a>
         </li>
       </ul>
     </div>

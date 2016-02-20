@@ -1,0 +1,14 @@
+{% capture content %}
+<section class="row">
+  <div class="medium-8 small-centered columns">
+    {% for subpage in pages %}
+      <article class="job-listing">
+        <h2><a href="{{ subpage.url }}">{{ subpage.title }}</a></h2>
+        <p class="lead">{{ subpage.meta.lead }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endcapture %}
+
+{% include "layouts/default" %}

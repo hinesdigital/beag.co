@@ -25,7 +25,7 @@ hr {
 section, article, aside {
   padding: 4rem 0;
 
-  &.content-body, &.featured-quote, &.team-bio {
+  &.content-body, &.featured-quote, &.team-bio, &.job-listing {
     h2 {
       @extend .medium-text-center;
     }
@@ -42,6 +42,10 @@ section, article, aside {
         border-bottom: 4px solid transparent;
       }
     }
+  }
+
+  &.job-listing {
+    padding-top: 0;
   }
 }
 

@@ -1,14 +1,14 @@
 main {
   footer#site-footer {
-    background-color: $black;
+    background-color: $dark-blue;
     color: $white;
 
     padding: 2rem 0;
 
     h1#logo {
       z-index: 3;
-      background-image: url("/assets/logo_transparent_white.png");
-      width: 100px;
+      background-image: url("/assets/whitney_logo_square.png");
+      width: 50px;
       height: 50px;
       background-size: contain;
       background-repeat: no-repeat;
